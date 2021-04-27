@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/d3Style.css">
+  
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+  <title>Covid Vaccine Adverse Effects</title>
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+<link href="carousel.css" rel="stylesheet">
+<body>
+            
+  <nav class="navbar navbar-light" style="background-color: white;">
+          <!-- Navbar content -->
+          <a class="navbar-brand" href="index.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQY-P-DX5XLXZzRvNZPt9yKx5eO2sHL6PSiQ&usqp=CAU" alt="" width="40" height="24" class="d-inline-block align-text-top">
+                COVID VACCINE ADVERSE EFFECTS</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                  Charts
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="brand.html">Vaccine Brand</a>
+                  <a class="dropdown-item" href="gender.html">Demographics</a>
+                  <a class="dropdown-item" href="symptoms.html">Symptoms</a>
+                  <a class="dropdown-item" href="hospitalizationanddeath.html">Hospitalization & Death</a>
+                </div>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link " href="comparison.html" tabindex="-1" >Comparison</a>
+              </li>
+              <li class = "nav-item">
+                <a class = "nav-link " href="data.html" tabindex="-1" >Data</a>
+              </li>
+              
+              </ul>
+            
+          </div>
+      </nav>
+
+    </nav>
+    <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <center><h1>Correlation Between Age and COVID Vaccine Adverse Effects</h1></center>
+      </div>
+    </div>
+    <br>
+    <div class="row" >
+      <div class="col-xs-12 col-md-9">
+        <div id="scatter">
+          <div class="chart"></div>
+          <!-- Append Chart Here -->
+        </div>
+      </div>
+    </div>
+               <!--JUMBOTRON-->
+               
+               <div class="jumbotron jumbotron-fluid" style="background-color:rgb(204, 43, 25);">
+                <div class="container">
+                  <center>
+                  <h3 class="display-4"><STRONG>COVID Vaccine Visualization Dashboard</STRONG></h3><br>
+                  <p class="lead"><p>The purpose of this dashboard is to help us determine whether there is a correlation between age, and COVID vaccine after effect, including hospitalization.</p>
+                        xxxxxxxxxxx ANALYSIS HERE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:</br>
+                        <p>This dashboard provides the source data and visualizations, as well as analysis, explanations, and observed correlations.</p>
+                      </p><br>
+                      <p class ="lead">The visualizations are available in the dropdown menu bar <br>
+                        or by clicking either the charts button  or visualizations slides bellow.</p>
+                      <br>
+                      <button href="#" type="button" class="btn btn-secondary btn-lg">Charts</button>
+                      </center>
+                </div>
+      
+            </div>
+        <div class= "margin:0">
+            <div class= "text-center">
+            <h2 class= "main-pg-subheader">Visualizations</h2>
+            <hr>
+
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+            <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <ol class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="vaccine_brand.png" class="d-block w-100" alt="..." >
+          
+                  <div class="container">
+                    <div class="carousel-caption text-start">
+                      <h1>Vaccine Brand Distribution</h1>
+                      <p>Pie chart showing the distribution of vaccine adverse effects by vaccine brand.</p>
+                      <p><a class="btn btn-lg btn-primary" href="brand.html">Vaccine Brand</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="..." class="d-block w-100" alt="...">
+          
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <h1>Another example headline.</h1>
+                      <p>Some representative placeholder content for the second slide of the carousel.</p>
+                      <p><a class="btn btn-lg btn-primary" href="#">Demographics</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="..." class="d-block w-100" alt="...">
+          
+                  <div class="container">
+                    <div class="carousel-caption text-end">
+                      <h1>One more for good measure.</h1>
+                      <p>Some representative placeholder content for the third slide of this carousel.</p>
+                      <p><a class="btn btn-lg btn-primary" href="#">Symptoms</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="sidebar">
+                <a href= "brand.html"><img id= "side-img1" src="Resources/assets/images/Fig1.png" alt= "Vaccine Brand pie chart"></a>
+                <a href= "gender.html"><img id= "side-img2" src= "Resources/assets/images/Fig2.png", alt= "Gender pie chart"></a>
+                <a href= "symptoms.html"><img id= "side-img3" src= "Resources/assets/images/Fig3.png", alt= "Symptoms chart"></a>
+                <a href= "hospitalizationanddeath.html"><img id= "side-img4" src= "Resources/assets/images/Fig4.png", alt= "Hospitalization and deaths chart"></a>
+            </div>
+               
+
+                    
+  <!-- Footer -->
+  <div id="footer">
+    <p>&copy; Copyright@. All Rights Reserved.</p>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+  <script src="bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="app.py"></script>
+
+</body>
+
+</html>
+ 
