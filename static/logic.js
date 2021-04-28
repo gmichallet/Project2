@@ -30,7 +30,7 @@ d3.json("num_cases.geojson").then(function(data) {
     valueProperty: "number_of_cases",
 
     // Set color scale
-    scale: ["#ffffb2", "#b10026"],
+    scale: ['#fde0dd','#fa9fb5','#c51b8a'],
 
     // Number of breaks in step range
     steps: 10,
@@ -46,8 +46,8 @@ d3.json("num_cases.geojson").then(function(data) {
 
     // Binding a pop-up to each layer
     onEachFeature:function(feature, layer) {
-      layer.bindPopup("State: " + feature.properties.state + "<br>Number of Covid Vaccine Adverse Effects<br>" +
-        "$" + feature.properties.number_of_cases);
+      layer.bindPopup("State: " + feature.properties.state + "<br>Adverse Effects:<br>" +
+         feature.properties.number_of_cases);
     }
   }).addTo(myMap);
 
@@ -60,7 +60,7 @@ d3.json("num_cases.geojson").then(function(data) {
     var labels = [];
 
     // Add min & max
-    var legendInfo = "<h1>Covid Vaccines</h1>" +
+    var legendInfo = "<h1>Covid Vaccine Adverse Effects</h1>" +
       "<div class=\"labels\">" +
         "<div class=\"min\">" + limits[0] + "</div>" +
         "<div class=\"max\">" + limits[limits.length - 1] + "</div>" +
