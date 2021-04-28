@@ -15,12 +15,12 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(myMap);
 
 // Load in geojson data
-var vaxData = "../data/num_cases.csv";
+var vaxData = "num_cases.geojson";
 
 
 
 // Grab data with d3
-d3.csv("num_cases.csv").then(function(data) {
+d3.json("num_cases.geojson").then(function(data) {
   console.log(data);
   var vaxcsv;
   // Create a new choropleth layer
@@ -46,8 +46,8 @@ d3.csv("num_cases.csv").then(function(data) {
 
     // Binding a pop-up to each layer
     onEachFeature:function(feature, layer) {
-      layer.bindPopup("State: " + state + "<br>Number of Covid Vaccine Adverse Effects<br>" +
-        "$" + number_of_cases);
+      layer.bindPopup("State: " + feature.properties.state + "<br>Number of Covid Vaccine Adverse Effects<br>" +
+        "$" + feature.properties.number_of_cases);
     }
   }).addTo(myMap);
 
