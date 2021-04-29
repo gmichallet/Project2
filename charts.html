@@ -38,7 +38,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="brand.html">Vaccine Brand</a>
-                  <a class="dropdown-item" href="gender.html">Demographics</a>
+                  <a class="dropdown-item" href="demographics.html">Demographics</a>
                   <a class="dropdown-item" href="static/choropleth_chart.html">Choropleth</a>
                   <a class="dropdown-item" href="hospitalizationanddeath.html">Hospitalization & Death</a>
                   <a class="dropdown-item" href="positiveincreases.html">Positive Increases</a>
@@ -74,8 +74,8 @@
             <img src="vaccine_brand.png" class="card-img-top" alt="...">
             <div class="shadow card-body" style="background-color: rgb(36, 34, 34);" >
               <h5 class="card-title" style="color: white;">Vaccine Brand</h5>
-              <p class="card-text" style="color: white;">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <a href="#" class="btn btn-secondary">Vaccine Brand</a>
+              <p class="card-text" style="color: white;">This chart shows the breakdown of Covid-19 vaccine adverse effects by manufatures and how many people were affected.</p>
+              <a href="brand.html" class="btn btn-secondary">Vaccine Brand</a>
             </div>
             </div>
           </div>
@@ -86,19 +86,43 @@
             <img src="choroplethMap.PNG" class="card-img-top" alt="...">
             <div class="card-body" style="background-color: rgb(36, 34, 34);" >
               <h5 class="card-title" style="color: white;">Vaccine Adverse Effects Choropleth</h5>
-              <p class="card-text" style="color: white;">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text" style="color: white;">This is a choropleth map that shows the Covid-19 vaccine adverse effects by state. The darker the shade the more adverse effects the state had.</p>
               <a href="static/choropleth_chart.html" class="btn btn-secondary">Choropleth</a>
             </div>
             </div>
           </div>
         </div>
         <div class="col">
+            <div class="shadow-lg p-3 mb-5">
+              <div class="card">
+                <img src="vaccine_aprildata.png" class="card-img-top" alt="...">
+                <div class="card-body" style="background-color: rgb(36, 34, 34);" >
+                  <h5 class="card-title" style="color: white;">April 2021 COVID-19 Vaccine Data</h5>
+                  <p class="card-text" style="color: white;">This chart shows the amount of Covid-19 vaccines administered by brand.</p>
+                  <a href="brand.html" class="btn btn-secondary">Vaccine Brand</a>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="shadow-lg p-3 mb-5">
+                  <div class="card">
+                    <img src="demographics.png" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: rgb(36, 34, 34);" >
+                      <h5 class="card-title" style="color: white;">Age Distribution of Covid-19 Vaccines</h5>
+                      <p class="card-text" style="color: white;">This graph shows the age distribution of all people who had adverse effects after vaccination.</p>
+                      <a href="demographics.html" class="btn btn-secondary">Demographics</a>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+        <div class="col">
         <div class="shadow-lg p-3 mb-5">
           <div class="card">
             <img src="DeathsSex.png" class="card-img-top" alt="...">
             <div class="card-body" style="background-color: rgb(36, 34, 34);" >
-              <h5 class="card-title" style="color: white;">Card title</h5>
-              <p class="card-text" style="color: white;">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <h5 class="card-title" style="color: white;">Deaths After Vaccination by Sex</h5>
+              <p class="card-text" style="color: white;">This chart shows the breakdown of deaths after vaccination by sex.</p>
               <a href="hospitalizationanddeath.html" class="btn btn-secondary">Hospitalizations & Deaths</a>
             </div>
           </div>
@@ -109,8 +133,8 @@
           <div class="card">
             <img src="Deaths.png" class="card-img-top" alt="...">
             <div class="card-body" style="background-color: rgb(36, 34, 34);" >
-              <h5 class="card-title" style="color: white;">Card title</h5>
-              <p class="card-text" style="color: white;">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title" style="color: white;">Deaths After Vaccination</h5>
+              <p class="card-text" style="color: white;">This chart shows the amount of patients with adverse effects who died and those who did not.</p>
               <a href="hospitalizationanddeath.html" class="btn btn-secondary">Hospitalizations & Deaths</a>
             </div>
           </div>
@@ -121,8 +145,8 @@
             <div class="card">
               <img src="AvgDays.png" class="card-img-top" alt="...">
               <div class="card-body" style="background-color: rgb(36, 34, 34);" >
-                <h5 class="card-title" style="color: white;">Card title</h5>
-                <p class="card-text" style="color: white;">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                <h5 class="card-title" style="color: white;">Average Days Until Death After Vaccination by Sex</h5>
+                <p class="card-text" style="color: white;">This chart shows the average days it took until a person died after they were vaccinated by sex.</p>
                 <a href="avgdays.html" class="btn btn-secondary">Average Days</a>
               </div>
             </div>
@@ -133,9 +157,21 @@
             <div class="card">
               <img src="MalesVsFemales.png" class="card-img-top" alt="...">
               <div class="card-body" style="background-color: rgb(36, 34, 34);" >
-                <h5 class="card-title" style="color: white;">Card title</h5>
-                <p class="card-text" style="color: white;">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                <a href="gender.html" class="btn btn-secondary">Gender</a>
+                <h5 class="card-title" style="color: white;">Covid-19 Vaccines by Sex Pie Chart</h5>
+                <p class="card-text" style="color: white;">This chart shows the breakdown of who was vaccinated by sex in a pie chart.</p>
+                <a href="demographics.html" class="btn btn-secondary">Demographics</a>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="shadow-lg p-3 mb-5">
+            <div class="card">
+              <img src="hosp_stats.png" class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(36, 34, 34);" >
+                <h5 class="card-title" style="color: white;">Hospitalization Statisitics</h5>
+                <p class="card-text" style="color: white;">This chart shows the stats of the demographics of who had hospitalized after vaccination.</p>
+                <a href="avgdays.html" class="btn btn-secondary">Average Days</a>
               </div>
             </div>
             </div>
@@ -145,9 +181,9 @@
             <div class="card">
               <img src="MalesVsFemales2.png" class="card-img-top" alt="...">
               <div class="card-body" style="background-color: rgb(36, 34, 34);" >
-                <h5 class="card-title" style="color: white;">Card title</h5>
-                <p class="card-text" style="color: white;">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                <a href="gender.html" class="btn btn-secondary">Gender</a>
+                <h5 class="card-title" style="color: white;">Covid-19 Vaccines by Sex Bar Chart</h5>
+                <p class="card-text" style="color: white;">This chart shows the breakdown of who was vaccinated by sex in a pie chart.</p>
+                <a href="demographics.html" class="btn btn-secondary">Demographics</a>
               </div>
             </div>
             </div>
@@ -157,8 +193,8 @@
             <div class="card">
               <img src="26MoreEastCoast.png" class="card-img-top" alt="...">
               <div class="card-body" style="background-color: rgb(36, 34, 34);" >
-                <h5 class="card-title" style="color: white;">Card title</h5>
-                <p class="card-text" style="color: white;">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                <h5 class="card-title" style="color: white;">Fatality Ratio</h5>
+                <p class="card-text" style="color: white;">This chart shows the fatality ratio of Covid-19 by state.</p>
                 <a href="fatalityratio.html" class="btn btn-secondary">Fatality Ratio</a>
               </div>
             </div>
@@ -169,8 +205,8 @@
             <div class="card">
               <img src="FatRatio26 more.png" class="card-img-top" alt="...">
               <div class="card-body" style="background-color: rgb(36, 34, 34);" >
-                <h5 class="card-title" style="color: white;">Card title</h5>
-                <p class="card-text" style="color: white;">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                <h5 class="card-title" style="color: white;">Fatality Ratio</h5>
+                <p class="card-text" style="color: white;">This chart shows the fatality ratio of Covid-19 by state.</p>
                 <a href="fatalityratio.html" class="btn btn-secondary">Fatality Ratio</a>
               </div>
             </div>
@@ -181,8 +217,8 @@
             <div class="card">
               <img src="positiveNY.png" class="card-img-top" alt="...">
               <div class="card-body" style="background-color: rgb(36, 34, 34);" >
-                <h5 class="card-title" style="color: white;">Card title</h5>
-                <p class="card-text" style="color: white;">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                <h5 class="card-title" style="color: white;">Positive Increases in NY</h5>
+                <p class="card-text" style="color: white;">This chart shows the positive Covid-19 cases in New York.</p>
                 <a href="positiveincreases.html" class="btn btn-secondary">Positive Increases</a>
               </div>
             </div>
@@ -193,8 +229,8 @@
             <div class="card">
               <img src="positiveIL.png" class="card-img-top" alt="...">
               <div class="card-body" style="background-color: rgb(36, 34, 34);" >
-                <h5 class="card-title" style="color: white;">Card title</h5>
-                <p class="card-text" style="color: white;">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                <h5 class="card-title" style="color: white;">Positive Increases in IL</h5>
+                <p class="card-text" style="color: white;">This chart shows the positive Covid-19 cases in Illinois.</p>
                 <a href="positiveincreases.html" class="btn btn-secondary">Positive Increases</a>
               </div>
             </div>
