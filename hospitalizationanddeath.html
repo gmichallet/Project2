@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/d3Style.css">
+  
+ 
+
+  <title>Covid Vaccine Adverse Effects</title>
+</head>
+
+<body>
+            
+  <nav class="navbar navbar-light" style="background-color: white;">
+          <!-- Navbar content -->
+          <a class="navbar-brand" href="index.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQY-P-DX5XLXZzRvNZPt9yKx5eO2sHL6PSiQ&usqp=CAU" alt="" width="40" height="24" class="d-inline-block align-text-top">
+            Hospitalizations and Deaths</a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> 
+                  Visualizations
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="brand.html">Vaccine Brand</a>
+                    <a class="dropdown-item" href="demographics.html">Demographics</a>
+                    <a class="dropdown-item" href="static/choropleth_chart.html">Choropleth</a>
+                    <a class="dropdown-item" href="hospitalizationanddeath.html">Hospitalizations & Deaths</a>
+                    <a class="dropdown-item" href="positiveincreases.html">Positive Increases</a>
+                    <a class="dropdown-item" href="avgdays.html">Average Days</a>
+                    <a class="dropdown-item" href="fatalityratio.html">Fatality Ratio</a>
+                </div>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link " href="charts.html" tabindex="-1" >Charts</a>
+              </li>
+              
+              
+              </ul>
+            
+          </div>
+      </nav>
+
+    
+    <br>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">What are the death rates after vaccination?</h1>
+        </div>
+    </div>
+   
+   <div class="container">
+       
+        <img src="Deaths.png" alt="...">
+        
+        
+        
+            <img src="DeathsSex.png" alt="...">  
+            </div>
+            
+           
+            
+            
+    
+        </div>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <p class="lead">Of all adverse effects reported just under 16% resulted in death. Since more women had adverse effects than men, about 60% of those who surved where women and about 24% were men. Almost 9% of those who died were men and about 7% were women.</p>
+            </div>
+        </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  
+    <script src="bootstrap.bundle.min.js"></script>
+
+    </body>
+    </html>
